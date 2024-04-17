@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+{% load course_tags %}
+
+    <!-- HERO
+    ================================================== -->
+    <section class="py-13 pt-xl-14 mt-n13 pb-lg-12 bg-cover position-relative" style="background: linear-gradient(90deg, #FFEBE5 0.13%, #EDEAF6 100.01%);">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-5 col-lg-5 order-md-2" data-aos="fade-in">
+
+                    <!-- Image -->
+                    <img src="{% static 'assets/img/illustrations/logo.jpg' %}" class="img-fluid ms-xl-n11 mw-md-174 mb-6 mb-md-0" alt="...">
+
+                </div>
+
+                <div class="col-12 col-md-7 col-lg-7 order-md-1">
+                    <!-- Heading -->
+                    <h1 class="display-2 text-gradient-1 text-capitalize" data-aos="fade-left" data-aos-duration="150">
+                         <span class="fw-bold">MelodyMist</span>
+                    </h1>
+
+                    <!-- Text -->
+                    <p class="lead pe-md-8 pe-xl-12 text-capitalize" data-aos="fade-up" data-aos-duration="200">
+                        Enhancing Employee Well-being With Music
+
+                    </p>
+
+                    <!-- Buttons -->
+                    
+                    
+                    <a href="{% url 'camera' %}" class="btn btn-gigas btn-wide rounded-lg d-none d-lg-inline-block" data-aos="fade-up" data-aos-duration="500">Get Started</a>
+                    <a href="{% url 'visualize' %}" class="btn btn-gigas btn-wide rounded-lg d-none d-lg-inline-block" data-aos="fade-up" data-aos-duration="500">Dashboard</a>
+                </div>
+            </div> <!-- / .row -->
+        </div> <!-- / .container -->
+        <!-- Shape -->
+        <div class="d-none d-wd-block shape shape-blur shape-left shape-fluid-y svg-shim text-white">
+            <svg viewBox="0 0 310 800" fill="none" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px">
+            	<path fill="currentColor" d="M193,0H0v800h310c-64.6,0-117-52.4-117-117V0z"/>
+            </svg>
+
+        </div>
+    </section>
+
+    
+
+<!-- FEATURES GENERAL
+    ================================================== -->
+    <section class="py-5 py-md-8 bg-white">
+        <div class="container container-wd">
+            <div class="row align-items-center mb-6">
+                <div class="col-md-6 order-2" data-aos="fade-left">
+                    <h2>Managing Stress with Music: Tips for Incorporating Music into Your Daily Routine.</h2>
+                    <p class="line-clamp-3 line-height-md">Stress is an inevitable part of life, but it's important to manage it effectively to prevent it from taking a toll on our mental and physical health. One of the most effective and accessible ways to manage stress is through music. Music has a powerful ability to calm our minds, relax our bodies, and elevate our moods. In this webpage, we will explore how music can be used as a tool for stress management and provide tips on how to incorporate music into your daily routine.</p>
+                </div>
+
+                <div class="col-md-6 order-1 mb-8 mb-md-0" data-aos="zoom-in">
+                    <img class="img-fluid" src="{% static 'assets/img/post/1st.png' %}" alt="...">
+                </div>
+            </div>
+
+            <div class="row align-items-center">
+                <div class="col-md-6 order-2 order-md-1" data-aos="fade-right">
+                    <h2>The Power of Music: Using it to Manage Stress and Improve Well-being</h2>
+                    <p class="line-clamp-3 line-height-md">Music can be a powerful tool for managing stress and improving our overall well-being. By incorporating music into our daily routines and practicing mindfulness while listening, we can reap the numerous benefits that music has to offer. So, next time you're feeling stressed, take a few minutes to listen to some calming or uplifting music and see how it can transform your mood and mindset.</p>
+                </div>
+
+                <div class="col-md-6 order-1 mb-8 mb-md-0 order-md-2 text-right" data-aos="zoom-in">
+                    <img class="img-fluid" src="{% static 'assets/img/post/2nd.png' %}" alt="...">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CALL ACTION
+    ================================================== -->
+   
+
+                    
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
